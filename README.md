@@ -2,10 +2,33 @@
 
 Collaborative Power BI case study by **Vansh Verma and Denny Hoang**.
 
-Two interactive report pages explore Edwards' development, win/loss scoring
-patterns and a selected group of five peer guards. This repository presents
-reviewed screenshots, documented findings and technical evidence extracted from
-the original final submission, without distributing its embedded sports data.
+A **business intelligence and sports-analytics case study** using Power BI,
+Power Query and Excel to explore Anthony Edwards' development across five NBA
+seasons, scoring in wins versus losses and a selected five-guard peer group.
+The original report has two pages with context filters for comparing production
+and shooting metrics.
+
+**[Browse all nine figures](#complete-figure-gallery) · [See the report structure](technical/TECHNICAL_EVIDENCE.md) · [Review checked aggregates](technical/data_validation.json)**
+
+![Original Power BI chart of Anthony Edwards points, rebounds and assists](assets/performance-trends.png)
+
+*Original saved report visual. The displayed Year axis uses calendar dates,
+rather than NBA-season labels. The complete gallery preserves the other eight
+figures, their source context and interpretation notes.*
+
+This repository presents reviewed screenshots, documented findings and technical
+evidence from the final submission. It does not distribute the embedded sports
+data or claim a fresh Power BI Desktop refresh.
+
+## Skills demonstrated
+
+| Skill area | Evidence in this project |
+| --- | --- |
+| **Power BI reporting and interactive dashboards** | [Two report pages, 20 visual containers and five slicers](technical/report_inventory.json) |
+| **Data preparation with Power Query and Excel** | [Jointly documented workflow](#workflow) across three workbooks; exact Power Query M steps remain unverified |
+| **Report modeling and metric aggregation** | [Source table organization and visual field bindings](technical/TECHNICAL_EVIDENCE.md), including points, rebounds, assists and shooting metrics |
+| **Comparative analysis and analytical storytelling** | [Five-season context, win/loss groups and selected-peer comparisons](#complete-figure-gallery) |
+| **Data quality and validation** | [Python and openpyxl workbook checks](scripts/validate_workbooks.py), added as separate November 2026 audit tooling |
 
 ## At a glance
 
