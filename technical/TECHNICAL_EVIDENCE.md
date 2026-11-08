@@ -40,6 +40,14 @@ relationships or Power Query definitions. The 18 diagram table names comprise:
 The source table's `Donovon` spelling is preserved in the machine-readable
 inventory; the narrative uses the player's correct spelling, Donovan Mitchell.
 
+## Complete figure evidence
+
+The README displays [all nine analytical source figures](../README.md#complete-figure-gallery)
+in final-report order. The [figure manifest](figure_manifest.json) maps the nine
+source media entries to byte-identical public assets, with hashes and captions.
+The joint logo is excluded. Forecast and donut snapshots are included with their
+original appearance and explicit analytical limits, not as newly validated results.
+
 ## Field and metric evidence
 
 The [report inventory](report_inventory.json) records the actual serialized
@@ -74,7 +82,7 @@ not launch Power BI, execute bundled code or update the original files.
 1. Open the original in Power BI Desktop and verify refresh and slicer behavior.
 2. Inspect and export exact Power Query M, explicit DAX and model relationships.
 3. Check calendar/season semantics and compare average percentages with weighted rates.
-4. Document or remove the original forecast; avoid causal interpretations of group averages.
+4. Validate the forecast before making predictive claims; the gallery currently labels its original display unvalidated. Continue avoiding causal interpretations of group averages.
 
 These items remain outstanding. The public evidence does not claim they were
 completed or silently replace them with newly invented formulas.

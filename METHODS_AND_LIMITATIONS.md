@@ -48,7 +48,8 @@ zero-attempt games and the visual's filter context affect the result.
 
 Win/loss average scoring is descriptive. The original donut's percentage labels
 normalize two group averages and should not be read as percentages of games or
-of total points. The public case study uses the checked group means instead.
+of total points. The gallery preserves that original donut with this limitation beside it; the
+checked analytical claim is restricted to the two group means.
 
 ## Original-report interpretation corrections
 
@@ -60,7 +61,7 @@ the evidence supports. This case study therefore:
 - avoids claiming every statistic improved every season;
 - limits rankings to the six selected players;
 - treats plus/minus as contextual;
-- excludes an unvalidated forecast from featured evidence.
+- includes the original forecast only as a labeled, unvalidated historical visual, without treating its projected line as an established prediction.
 
 ## What the source inspection establishes
 
@@ -90,3 +91,11 @@ Those with authorized copies of the same private originals can rerun the audit
 commands and compare hashes and derived output. The raw sports data and original
 course documents are not redistributed. A complete public end-to-end refresh is
 therefore not supplied.
+
+## Complete source-figure gallery
+
+The README now displays all nine analytical figures from the final write-up in
+report order. Their image bytes are preserved exactly. The joint project logo is
+omitted. The [figure manifest](technical/figure_manifest.json) maps the original
+media names to public assets and hashes. Original visual weaknesses are stated
+beside the relevant image rather than silently presented as validated findings.

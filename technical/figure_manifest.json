@@ -1,0 +1,117 @@
+{
+  "manifest_date": "2026-11-08",
+  "source_report_sha256": "2ef061d510566ad816df8b9ef13f5e9ebb2f4ad44696a4d09e836b87486f8e13",
+  "authors": [
+    "Vansh Verma",
+    "Denny Hoang"
+  ],
+  "analytical_figure_count": 9,
+  "excluded_source_media": [
+    {
+      "source_media": "word/media/image1.png",
+      "reason": "Joint project logo, not an analytical figure."
+    }
+  ],
+  "publication_note": "Original report snapshots, including historical visuals with explicitly documented interpretation and validation limits. No original file, raw game rows or custom-visual code distributed.",
+  "figures": [
+    {
+      "report_figure": 1,
+      "source_media": "word/media/image2.png",
+      "public_asset": "assets/opponent-shooting-efficiency.png",
+      "title": "Shooting percentages by opponent",
+      "caption": "Saved opponent view of average game-level FG%, FT% and 3P%; it is a displayed snapshot, not every opponent or an attempt-weighted shooting rate.",
+      "sha256": "d9173738e59897ef390256c3909d27c52386bb11810056916ae52d498740b641",
+      "width_px": 826,
+      "height_px": 772,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 2,
+      "source_media": "word/media/image3.png",
+      "public_asset": "assets/performance-trends.png",
+      "title": "Calendar-year production trend",
+      "caption": "Calendar-year averages of points, rebounds and assists; NBA-season workbook averages must be interpreted separately.",
+      "sha256": "fe91638545b05a64e6400a6ae7e8ebde293a9f3ae55305d9909dd0d314f71620",
+      "width_px": 736,
+      "height_px": 740,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 3,
+      "source_media": "word/media/image4.png",
+      "public_asset": "assets/win-loss-scoring-donut.png",
+      "title": "Average scoring in wins and losses",
+      "caption": "The displayed percentages normalize two scoring averages; they are not shares of games or total points and establish no causal effect.",
+      "sha256": "835bc71224f56b64a422542d9267e77aa4d991583fd46d7f7ef636d2da9b6ddd",
+      "width_px": 534,
+      "height_px": 312,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 4,
+      "source_media": "word/media/image5.png",
+      "public_asset": "assets/historical-unvalidated-forecast.png",
+      "title": "Original forecast display — unvalidated",
+      "caption": "Historical saved forecast shown for completeness; assumptions, validation and accuracy are unverified, so it is not offered as a future-performance prediction.",
+      "sha256": "c9927fd5d8f897016f58c288f04b56929ba86cb2e2dbdbf42d1b5235afe8d943",
+      "width_px": 862,
+      "height_px": 704,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 5,
+      "source_media": "word/media/image6.png",
+      "public_asset": "assets/peer-scoring-table.png",
+      "title": "Selected-peer scoring and plus-minus",
+      "caption": "Average points and plus/minus for six selected guards; this is not a league-wide ranking or causal-impact estimate.",
+      "sha256": "ded922023a504ed8aba2a132afe8466f4fa0a2800539e51c1cbf5035258d2be4",
+      "width_px": 802,
+      "height_px": 372,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 6,
+      "source_media": "word/media/image7.png",
+      "public_asset": "assets/peer-radar-comparison.png",
+      "title": "Selected-peer radar comparison",
+      "caption": "Original Microsoft custom-visual snapshot of average assists, points and rebounds; the measures share a raw scale and are not a normalized overall-skill score.",
+      "sha256": "44e23c09103a33351f37f98b1a70ca7c82ee626b37ee8c20d7c205c8d16ba870",
+      "width_px": 1172,
+      "height_px": 810,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 7,
+      "source_media": "word/media/image8.png",
+      "public_asset": "assets/peer-turnovers-fouls.png",
+      "title": "Turnovers and personal fouls",
+      "caption": "Per-game averages for six selected guards in the saved report context; usage and role differ, so this is not a role-adjusted error-rate ranking.",
+      "sha256": "e2ae9c76a53462ee6c60d045956468d115860c053353f13755fcf0dc31f81103",
+      "width_px": 936,
+      "height_px": 458,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 8,
+      "source_media": "word/media/image9.png",
+      "public_asset": "assets/peer-shooting-efficiency.png",
+      "title": "Selected-peer shooting percentages",
+      "caption": "Averages of game-level FG%, FT% and 3P%; these can differ from rates computed from total makes and attempts.",
+      "sha256": "e5c923f7db6b29765d932fb9196f49a5221fefada83ff45c80b4eb4c084225c3",
+      "width_px": 1320,
+      "height_px": 652,
+      "source_bytes_preserved": true
+    },
+    {
+      "report_figure": 9,
+      "source_media": "word/media/image10.png",
+      "public_asset": "assets/peer-scoring-totals.png",
+      "title": "Selected-peer scoring totals",
+      "caption": "Recorded points, made free throws and made three-pointers; totals depend on games played and availability and do not by themselves prove consistency.",
+      "sha256": "c881f90d3c61782fd5fbf95844d688165702b86bfa457fb22f4e17b70d1d0399",
+      "width_px": 972,
+      "height_px": 346,
+      "source_bytes_preserved": true
+    }
+  ]
+}

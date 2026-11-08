@@ -36,13 +36,13 @@ The materials may be viewed and linked for recruiting and educational-reference 
 
 ## Accuracy note
 
-Statistics were checked against the private project workbooks during the 2026-08-09 career-system audit. This repository is a historical case study, not a live or regularly updated statistics service.
+Statistics were checked against the private project workbooks during the 2026-08-09 career-system audit and rechecked during the 2026-11-08 reconciliation. This repository is a historical case study, not a live or regularly updated statistics service.
 
 ## November 2026 technical additions
 
 The final submission was reconciled against the original project artifacts on
-November 8, 2026. Only file fingerprints, selected layout/field metadata and
-aggregate validation results are added publicly. The raw PBIX, workbook records,
+November 8, 2026. File fingerprints, selected layout/field metadata, aggregate
+validation results and all nine analytical report figures are now public. The raw PBIX, workbook records,
 original write-up/proposal, opaque model contents and bundled custom-visual code
 are not distributed.
 
@@ -51,3 +51,11 @@ may be run locally to review an authorized project copy; they do not grant right
 to the underlying data, report assets or third-party code. No raw redistribution
 permission was established during this reconciliation. The original project
 continues to be credited to both Denny Hoang and Vansh Verma.
+
+## Source-figure completeness
+
+All nine analytical screenshots from the joint final write-up are displayed in
+report order. The joint logo is not an analytical figure and is excluded. The
+forecast, donut and radar images retain their original appearance, with adjacent
+captions explaining validation or interpretation limits. This gallery does not
+publish the original document or extend permission to its underlying data.
