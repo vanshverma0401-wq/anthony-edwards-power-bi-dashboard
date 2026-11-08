@@ -1,0 +1,68 @@
+{
+  "reconciliation_date": "2026-11-08",
+  "original_project_year": 2025,
+  "displayed_submission_date": "2025-12-05",
+  "project_title": "Project 2 Power BI Dashboards",
+  "project_authors": [
+    "Vansh Verma",
+    "Denny Hoang"
+  ],
+  "source": "Authenticated original course-submission attachments",
+  "attachment_archive_sha256": "df443d015ba72dff9e67f51a334ab409892170b458988e99c3a25893af3a12e1",
+  "standalone_report_matches_archive_copy": true,
+  "six_artifacts_match_previously_audited_local_copies": true,
+  "artifacts": [
+    {
+      "filename": "AnthonyEdwards_AllSeasons.xlsx",
+      "bytes": 85413,
+      "sha256": "90406d5b9792928d6747329bf1ec9a106792f5bcd76d034d19e1f0b2709b38b8",
+      "role": "Source statistics workbook",
+      "published": false
+    },
+    {
+      "filename": "NBA Comparisons.xlsx",
+      "bytes": 86116,
+      "sha256": "1682a6a41744051c2bb8e2fff3ddeca30422561d9340b48356b9e78ef4bf177b",
+      "role": "Source statistics workbook",
+      "published": false
+    },
+    {
+      "filename": "Project 2 - Anthony Edwards Performance Trends HoangVerma.docx",
+      "bytes": 1525502,
+      "sha256": "2ef061d510566ad816df8b9ef13f5e9ebb2f4ad44696a4d09e836b87486f8e13",
+      "role": "Joint final project write-up",
+      "published": false
+    },
+    {
+      "filename": "Project.pbix",
+      "bytes": 2371061,
+      "sha256": "4c7367d71beb5a531e270aa5eac55730105b13c5cea9b3b18d27bedebfb90fba",
+      "role": "Original Power BI report and embedded model",
+      "published": false
+    },
+    {
+      "filename": "SEIS 632 Project 2 Proposal.pdf",
+      "bytes": 178187,
+      "sha256": "d0880b44fc8cf76f229993741362c8cb7c6192558b3a9da3ba42dd1b43a75a05",
+      "role": "Joint project proposal",
+      "published": false
+    },
+    {
+      "filename": "Timberwolves Seasons.xlsx",
+      "bytes": 49963,
+      "sha256": "96d8355c7c41e65d594ad9c6aaef14c56d30b95414a58bed05006c48a9257b7a",
+      "role": "Source statistics workbook",
+      "published": false
+    }
+  ],
+  "publication_scope": "Source fingerprints and derived technical/aggregate evidence only. Original attachments and the embedded data model remain private.",
+  "scope_exclusions": [
+    "course account identifiers",
+    "submission URL",
+    "grades and feedback",
+    "local filesystem paths",
+    "raw sports records",
+    "private document metadata",
+    "third-party custom-visual code"
+  ]
+}

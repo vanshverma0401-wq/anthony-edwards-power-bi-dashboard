@@ -1,0 +1,996 @@
+{
+  "inventory_format": 1,
+  "tool_added": "November 2026 portfolio review",
+  "original_report_year": 2025,
+  "source_sha256": "4c7367d71beb5a531e270aa5eac55730105b13c5cea9b3b18d27bedebfb90fba",
+  "scope": {
+    "read_entries": [
+      "Report/Layout",
+      "DiagramLayout"
+    ],
+    "static_only": true,
+    "literal_filter_values_excluded": true,
+    "excluded": [
+      "model data",
+      "full queries",
+      "cached values",
+      "resource blobs",
+      "private identifiers",
+      "source paths",
+      "M and DAX definitions"
+    ],
+    "not_established": [
+      "model relationships",
+      "Power BI load or refresh",
+      "query execution",
+      "Power Query transformations"
+    ]
+  },
+  "page_count": 2,
+  "visual_count": 20,
+  "diagram_table_count": 18,
+  "diagram_table_names": [
+    "AE 2020-2021",
+    "AE 2021-2022",
+    "AE 2022-2023",
+    "AE 2023-2024",
+    "AE 2024-2025",
+    "AE Data",
+    "Devin Booker",
+    "Donovon Mitchell 2024-2025",
+    "Jalen Green 2024-2025",
+    "Jaylen Brown 2024-2025",
+    "Shooting Guards",
+    "Timberwolves 2020-2021",
+    "Timberwolves 2021-2022",
+    "Timberwolves 2022-2023",
+    "Timberwolves 2023-2024",
+    "Timberwolves 2024-2025",
+    "Timberwolves Data",
+    "Tyler Herro 2024-2025"
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "name": "Anthony Edwards Performance",
+      "width": 1280,
+      "height": 720,
+      "visual_count": 13,
+      "visual_types": {
+        "card": 4,
+        "clusteredBarChart": 1,
+        "donutChart": 1,
+        "image": 1,
+        "lineChart": 2,
+        "slicer": 3,
+        "textbox": 1
+      },
+      "visuals": [
+        {
+          "visual_number": 1,
+          "visual_type": "slicer",
+          "projection_roles": {
+            "Values": [
+              "AE Data.Date.Variation.Date Hierarchy.Year"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Year",
+              "native_display_name": "Date Year",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Year"
+              }
+            },
+            {
+              "query_alias": "Min(AE Data.Date.Variation.Date Hierarchy.Year)",
+              "native_display_name": "",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 3,
+                "operand": {
+                  "kind": "hierarchy_level",
+                  "table": "AE Data",
+                  "source_property": "Date",
+                  "hierarchy": "Date Hierarchy",
+                  "level": "Year"
+                }
+              }
+            },
+            {
+              "query_alias": "Max(AE Data.Date.Variation.Date Hierarchy.Year)",
+              "native_display_name": "",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 4,
+                "operand": {
+                  "kind": "hierarchy_level",
+                  "table": "AE Data",
+                  "source_property": "Date",
+                  "hierarchy": "Date Hierarchy",
+                  "level": "Year"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": false
+        },
+        {
+          "visual_number": 2,
+          "visual_type": "slicer",
+          "projection_roles": {
+            "Values": [
+              "AE Data.HomeAway"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.HomeAway",
+              "native_display_name": "HomeAway",
+              "expression": {
+                "kind": "column",
+                "table": "AE Data",
+                "property": "HomeAway"
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 3,
+          "visual_type": "slicer",
+          "projection_roles": {
+            "Values": [
+              "AE Data.Opp"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.Opp",
+              "native_display_name": "Opponents",
+              "expression": {
+                "kind": "column",
+                "table": "AE Data",
+                "property": "Opp"
+              }
+            }
+          ],
+          "saved_query_has_filter": false
+        },
+        {
+          "visual_number": 4,
+          "visual_type": "lineChart",
+          "projection_roles": {
+            "Category": [
+              "AE Data.Date.Variation.Date Hierarchy.Year",
+              "AE Data.Date.Variation.Date Hierarchy.Quarter",
+              "AE Data.Date.Variation.Date Hierarchy.Month",
+              "AE Data.Date.Variation.Date Hierarchy.Day"
+            ],
+            "Y": [
+              "Sum(AE Data.PTS)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Year",
+              "native_display_name": "",
+              "expression": {
+                "kind": "column",
+                "table": "",
+                "property": "AE Data.Date.Variation.Date Hierarchy.Year"
+              }
+            },
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Quarter",
+              "native_display_name": "",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Quarter"
+              }
+            },
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Month",
+              "native_display_name": "",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Month"
+              }
+            },
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Day",
+              "native_display_name": "",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Day"
+              }
+            },
+            {
+              "query_alias": "Sum(AE Data.PTS)",
+              "native_display_name": "",
+              "expression": {
+                "kind": "column",
+                "table": "",
+                "property": "Sum(AE Data.PTS)"
+              }
+            },
+            {
+              "query_alias": "forecastValue",
+              "native_display_name": "",
+              "expression": {
+                "kind": "column",
+                "table": "",
+                "property": "forecastValue"
+              }
+            },
+            {
+              "query_alias": "confidenceHighBound",
+              "native_display_name": "",
+              "expression": {
+                "kind": "column",
+                "table": "",
+                "property": "confidenceHighBound"
+              }
+            },
+            {
+              "query_alias": "confidenceLowBound",
+              "native_display_name": "",
+              "expression": {
+                "kind": "column",
+                "table": "",
+                "property": "confidenceLowBound"
+              }
+            },
+            {
+              "query_alias": "Min(LocalDateTable_d2838fe2-5049-4f3a-beb8-a0f256a3db09.Date)",
+              "native_display_name": "",
+              "expression": {
+                "kind": "column",
+                "table": "",
+                "property": "Min(LocalDateTable_d2838fe2-5049-4f3a-beb8-a0f256a3db09.Date)"
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 5,
+          "visual_type": "clusteredBarChart",
+          "projection_roles": {
+            "Category": [
+              "AE Data.Opp"
+            ],
+            "Y": [
+              "Sum(AE Data.FG%)",
+              "Sum(AE Data.FT%)",
+              "Sum(AE Data.3P%)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.Opp",
+              "native_display_name": "Opp",
+              "expression": {
+                "kind": "column",
+                "table": "AE Data",
+                "property": "Opp"
+              }
+            },
+            {
+              "query_alias": "Sum(AE Data.FG%)",
+              "native_display_name": "FG%",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "FG%"
+                }
+              }
+            },
+            {
+              "query_alias": "Sum(AE Data.FT%)",
+              "native_display_name": "FT%",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "FT%"
+                }
+              }
+            },
+            {
+              "query_alias": "Sum(AE Data.3P%)",
+              "native_display_name": "3P%",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "3P%"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 6,
+          "visual_type": "donutChart",
+          "projection_roles": {
+            "Category": [
+              "AE Data.WinFlag"
+            ],
+            "Y": [
+              "Sum(AE Data.PTS)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.WinFlag",
+              "native_display_name": "Sum of WinFlag",
+              "expression": {
+                "kind": "column",
+                "table": "AE Data",
+                "property": "WinFlag"
+              }
+            },
+            {
+              "query_alias": "Sum(AE Data.PTS)",
+              "native_display_name": "Average of PTS",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "PTS"
+                }
+              },
+              "display_corroborated_operation": "average"
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 7,
+          "visual_type": "card",
+          "projection_roles": {
+            "Values": [
+              "Sum(AE Data.PTS)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Sum(AE Data.PTS)",
+              "native_display_name": "Points per Game (PPG)",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "PTS"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 8,
+          "visual_type": "card",
+          "projection_roles": {
+            "Values": [
+              "Sum(AE Data.TRB)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Sum(AE Data.TRB)",
+              "native_display_name": "Rebounds per Game (RPG)",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "TRB"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 9,
+          "visual_type": "card",
+          "projection_roles": {
+            "Values": [
+              "Sum(AE Data.AST)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Sum(AE Data.AST)",
+              "native_display_name": "Assists per Game (APG)",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "AST"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 10,
+          "visual_type": "card",
+          "projection_roles": {
+            "Values": [
+              "Sum(AE Data.FG%)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Sum(AE Data.FG%)",
+              "native_display_name": "Field Goal Percentage (FG%)",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "FG%"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 11,
+          "visual_type": "image",
+          "projection_roles": {},
+          "selection_source": "prototype_query",
+          "selections": [],
+          "saved_query_has_filter": false
+        },
+        {
+          "visual_number": 12,
+          "visual_type": "textbox",
+          "projection_roles": {},
+          "selection_source": "prototype_query",
+          "selections": [],
+          "saved_query_has_filter": false
+        },
+        {
+          "visual_number": 13,
+          "visual_type": "lineChart",
+          "projection_roles": {
+            "Category": [
+              "AE Data.Date.Variation.Date Hierarchy.Year",
+              "AE Data.Date.Variation.Date Hierarchy.Quarter",
+              "AE Data.Date.Variation.Date Hierarchy.Month",
+              "AE Data.Date.Variation.Date Hierarchy.Day"
+            ],
+            "Y": [
+              "Sum(AE Data.PTS)",
+              "Sum(AE Data.TRB)",
+              "Sum(AE Data.AST)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Year",
+              "native_display_name": "Date Year",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Year"
+              }
+            },
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Quarter",
+              "native_display_name": "Date Quarter",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Quarter"
+              }
+            },
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Month",
+              "native_display_name": "Date Month",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Month"
+              }
+            },
+            {
+              "query_alias": "AE Data.Date.Variation.Date Hierarchy.Day",
+              "native_display_name": "Date Day",
+              "expression": {
+                "kind": "hierarchy_level",
+                "table": "AE Data",
+                "source_property": "Date",
+                "hierarchy": "Date Hierarchy",
+                "level": "Day"
+              }
+            },
+            {
+              "query_alias": "Sum(AE Data.PTS)",
+              "native_display_name": "Average of PTS",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "PTS"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(AE Data.TRB)",
+              "native_display_name": "Average of TRB",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "TRB"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(AE Data.AST)",
+              "native_display_name": "Average of AST",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "AE Data",
+                  "property": "AST"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Min(LocalDateTable_d2838fe2-5049-4f3a-beb8-a0f256a3db09.Date)",
+              "native_display_name": "",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 3,
+                "operand": {
+                  "kind": "column",
+                  "table": "LocalDateTable_d2838fe2-5049-4f3a-beb8-a0f256a3db09",
+                  "property": "Date"
+                }
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "name": "Comparison to Top Shooting Guards",
+      "width": 1280,
+      "height": 720,
+      "visual_count": 7,
+      "visual_types": {
+        "RadarChart1446119667547": 1,
+        "clusteredBarChart": 1,
+        "clusteredColumnChart": 1,
+        "pivotTable": 2,
+        "slicer": 2
+      },
+      "visuals": [
+        {
+          "visual_number": 1,
+          "visual_type": "slicer",
+          "projection_roles": {
+            "Values": [
+              "Shooting Guards.Result.1"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Result.1",
+              "native_display_name": "Win/Loss",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Result.1"
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 2,
+          "visual_type": "slicer",
+          "projection_roles": {
+            "Values": [
+              "Shooting Guards.Name"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Name",
+              "native_display_name": "Name",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Name"
+              }
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 3,
+          "visual_type": "RadarChart1446119667547",
+          "projection_roles": {
+            "Category": [
+              "Shooting Guards.Name"
+            ],
+            "Y": [
+              "Sum(Shooting Guards.AST)",
+              "Sum(Shooting Guards.PTS)",
+              "Sum(Shooting Guards.TRB)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Name",
+              "native_display_name": "Name",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Name"
+              }
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.AST)",
+              "native_display_name": "Average of Assits",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "AST"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.PTS)",
+              "native_display_name": "Average of Points",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "PTS"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.TRB)",
+              "native_display_name": "Average of Rebounds",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "TRB"
+                }
+              },
+              "display_corroborated_operation": "average"
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 4,
+          "visual_type": "pivotTable",
+          "projection_roles": {
+            "Rows": [
+              "Shooting Guards.Name"
+            ],
+            "Values": [
+              "Sum(Shooting Guards.PTS)",
+              "Sum(Shooting Guards.FT)",
+              "Sum(Shooting Guards.3P)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Name",
+              "native_display_name": "Name",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Name"
+              }
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.PTS)",
+              "native_display_name": "Sum of Points",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 0,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "PTS"
+                }
+              },
+              "display_corroborated_operation": "sum"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.FT)",
+              "native_display_name": "Sum of Free Throws",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 0,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "FT"
+                }
+              },
+              "display_corroborated_operation": "sum"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.3P)",
+              "native_display_name": "Sum of 3P",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 0,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "3P"
+                }
+              },
+              "display_corroborated_operation": "sum"
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 5,
+          "visual_type": "clusteredBarChart",
+          "projection_roles": {
+            "Category": [
+              "Shooting Guards.Name"
+            ],
+            "Y": [
+              "Sum(Shooting Guards.FT%)",
+              "Sum(Shooting Guards.FG%)",
+              "Sum(Shooting Guards.3P%)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Name",
+              "native_display_name": "Name",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Name"
+              }
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.FT%)",
+              "native_display_name": "Average of FT%",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "FT%"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.FG%)",
+              "native_display_name": "Average of FG%",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "FG%"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.3P%)",
+              "native_display_name": "Average of 3P%",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "3P%"
+                }
+              },
+              "display_corroborated_operation": "average"
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 6,
+          "visual_type": "pivotTable",
+          "projection_roles": {
+            "Rows": [
+              "Shooting Guards.Name"
+            ],
+            "Values": [
+              "Sum(Shooting Guards.PTS)",
+              "Sum(Shooting Guards.+/-)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Name",
+              "native_display_name": "Name",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Name"
+              }
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.PTS)",
+              "native_display_name": "Average of Points",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "PTS"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Sum(Shooting Guards.+/-)",
+              "native_display_name": "Average of +/-",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "+/-"
+                }
+              },
+              "display_corroborated_operation": "average"
+            }
+          ],
+          "saved_query_has_filter": true
+        },
+        {
+          "visual_number": 7,
+          "visual_type": "clusteredColumnChart",
+          "projection_roles": {
+            "Category": [
+              "Shooting Guards.Name"
+            ],
+            "Y": [
+              "Avg(Shooting Guards.TOV)",
+              "Avg(Shooting Guards.PF)"
+            ]
+          },
+          "selection_source": "visual_semantic_query",
+          "selections": [
+            {
+              "query_alias": "Shooting Guards.Name",
+              "native_display_name": "Name",
+              "expression": {
+                "kind": "column",
+                "table": "Shooting Guards",
+                "property": "Name"
+              }
+            },
+            {
+              "query_alias": "Avg(Shooting Guards.TOV)",
+              "native_display_name": "Average of Turnover",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "TOV"
+                }
+              },
+              "display_corroborated_operation": "average"
+            },
+            {
+              "query_alias": "Avg(Shooting Guards.PF)",
+              "native_display_name": "Average of Personal foul",
+              "expression": {
+                "kind": "aggregation",
+                "function_code": 1,
+                "operand": {
+                  "kind": "column",
+                  "table": "Shooting Guards",
+                  "property": "PF"
+                }
+              },
+              "display_corroborated_operation": "average"
+            }
+          ],
+          "saved_query_has_filter": true
+        }
+      ]
+    }
+  ]
+}

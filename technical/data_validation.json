@@ -1,0 +1,809 @@
+{
+  "schema_version": 1,
+  "tooling_introduced": "2026-11-08",
+  "tooling_scope": "New portfolio audit helper; not recovered Power Query, DAX or original project code.",
+  "method": {
+    "read_only": true,
+    "formula_evaluation_or_refresh": false,
+    "player_formula_policy": "Refuse player workbooks containing formula cells; original exports are values-only.",
+    "eligible_game": "Valid native date or ISO date string plus finite numeric PTS; zero PTS is included.",
+    "summary_exclusion": "Rows without a valid date are excluded, including season totals.",
+    "nonappearance_exclusion": "Dated rows with blank or nonnumeric PTS are excluded.",
+    "other_metrics": "TRB and AST each use numeric values among eligible PTS games; their counts are reported separately.",
+    "result_groups": "W or L prefix in Result, among eligible PTS games; unknown results are counted separately.",
+    "mean_precision_decimal_places": 6,
+    "data_output": "Hashes, sheet/header inventories and aggregates only; no game rows, local paths or workbook-author metadata.",
+    "power_bi_runtime_validated": false
+  },
+  "sources": [
+    {
+      "filename": "AnthonyEdwards_AllSeasons.xlsx",
+      "sha256": "90406d5b9792928d6747329bf1ec9a106792f5bcd76d034d19e1f0b2709b38b8",
+      "sheet_count": 5,
+      "formula_cells_present": 0,
+      "sheets": [
+        {
+          "name": "2020-2021",
+          "declared_rows_including_header": 74,
+          "declared_columns": 35,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-",
+            null
+          ]
+        },
+        {
+          "name": "2021-2022",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "2022-2023",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "2023-2024",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "2024-2025",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "NBA Comparisons.xlsx",
+      "sha256": "1682a6a41744051c2bb8e2fff3ddeca30422561d9340b48356b9e78ef4bf177b",
+      "sheet_count": 5,
+      "formula_cells_present": 0,
+      "sheets": [
+        {
+          "name": "Tyler Herro 2024-2025",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "Jaylen Brown 2024-2025",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "Jalen Green 2024-2025",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "Donovon Mitchell 2024-2025",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        },
+        {
+          "name": "Devin Booker 2024-2025",
+          "declared_rows_including_header": 84,
+          "declared_columns": 34,
+          "headers": [
+            "Rk",
+            "Gcar",
+            "Gtm",
+            "Date",
+            "Team",
+            null,
+            "Opp",
+            "Result",
+            "GS",
+            "MP",
+            "FG",
+            "FGA",
+            "FG%",
+            "3P",
+            "3PA",
+            "3P%",
+            "2P",
+            "2PA",
+            "2P%",
+            "eFG%",
+            "FT",
+            "FTA",
+            "FT%",
+            "ORB",
+            "DRB",
+            "TRB",
+            "AST",
+            "STL",
+            "BLK",
+            "TOV",
+            "PF",
+            "PTS",
+            "GmSc",
+            "+/-"
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "Timberwolves Seasons.xlsx",
+      "sha256": "96d8355c7c41e65d594ad9c6aaef14c56d30b95414a58bed05006c48a9257b7a",
+      "sheet_count": 5,
+      "formula_cells_present": 0,
+      "sheets": [
+        {
+          "name": "Timberwolves 2024-2025",
+          "declared_rows_including_header": 83,
+          "declared_columns": 17,
+          "headers": [
+            "G",
+            "Date",
+            "Start (ET)",
+            null,
+            null,
+            null,
+            "Opponent",
+            null,
+            null,
+            "Tm",
+            "Opp",
+            "W",
+            "L",
+            "Streak",
+            "Attend.",
+            "LOG",
+            "Notes"
+          ]
+        },
+        {
+          "name": "Timberwolves 2023-2024",
+          "declared_rows_including_header": 83,
+          "declared_columns": 17,
+          "headers": [
+            "G",
+            "Date",
+            "Start (ET)",
+            null,
+            null,
+            null,
+            "Opponent",
+            null,
+            null,
+            "Tm",
+            "Opp",
+            "W",
+            "L",
+            "Streak",
+            "Attend.",
+            "LOG",
+            "Notes"
+          ]
+        },
+        {
+          "name": "Timberwolves 2022-2023",
+          "declared_rows_including_header": 85,
+          "declared_columns": 17,
+          "headers": [
+            "G",
+            "Date",
+            "Start (ET)",
+            null,
+            null,
+            null,
+            "Opponent",
+            null,
+            null,
+            "Tm",
+            "Opp",
+            "W",
+            "L",
+            "Streak",
+            "Attend.",
+            "LOG",
+            "Notes"
+          ]
+        },
+        {
+          "name": "Timberwolves 2021-2022",
+          "declared_rows_including_header": 84,
+          "declared_columns": 17,
+          "headers": [
+            "G",
+            "Date",
+            "Start (ET)",
+            null,
+            null,
+            null,
+            "Opponent",
+            null,
+            null,
+            "Tm",
+            "Opp",
+            "W",
+            "L",
+            "Streak",
+            "Attend.",
+            "LOG",
+            "Notes"
+          ]
+        },
+        {
+          "name": "Timberwolves 2020-2021",
+          "declared_rows_including_header": 73,
+          "declared_columns": 18,
+          "headers": [
+            "G",
+            "Date",
+            "Start (ET)",
+            null,
+            null,
+            null,
+            "Opponent",
+            null,
+            null,
+            "Tm",
+            "Opp",
+            "W",
+            "L",
+            "Streak",
+            "Attend.",
+            "LOG",
+            "Notes",
+            null
+          ]
+        }
+      ]
+    }
+  ],
+  "edwards": {
+    "per_season": [
+      {
+        "season": "2020-2021",
+        "rows_after_header": 73,
+        "excluded_without_valid_date": 1,
+        "excluded_without_numeric_pts": 0,
+        "eligible_games": 72,
+        "eligible_games_without_known_result": 0,
+        "metrics": {
+          "PTS": {
+            "count": 72,
+            "mean": 19.333333
+          },
+          "TRB": {
+            "count": 72,
+            "mean": 4.666667
+          },
+          "AST": {
+            "count": 72,
+            "mean": 2.930556
+          }
+        },
+        "win_loss_pts": {
+          "W": {
+            "count": 23,
+            "mean": 20.130435
+          },
+          "L": {
+            "count": 49,
+            "mean": 18.959184
+          }
+        }
+      },
+      {
+        "season": "2021-2022",
+        "rows_after_header": 83,
+        "excluded_without_valid_date": 1,
+        "excluded_without_numeric_pts": 10,
+        "eligible_games": 72,
+        "eligible_games_without_known_result": 0,
+        "metrics": {
+          "PTS": {
+            "count": 72,
+            "mean": 21.291667
+          },
+          "TRB": {
+            "count": 72,
+            "mean": 4.763889
+          },
+          "AST": {
+            "count": 72,
+            "mean": 3.819444
+          }
+        },
+        "win_loss_pts": {
+          "W": {
+            "count": 39,
+            "mean": 21.025641
+          },
+          "L": {
+            "count": 33,
+            "mean": 21.606061
+          }
+        }
+      },
+      {
+        "season": "2022-2023",
+        "rows_after_header": 83,
+        "excluded_without_valid_date": 1,
+        "excluded_without_numeric_pts": 3,
+        "eligible_games": 79,
+        "eligible_games_without_known_result": 0,
+        "metrics": {
+          "PTS": {
+            "count": 79,
+            "mean": 24.632911
+          },
+          "TRB": {
+            "count": 79,
+            "mean": 5.797468
+          },
+          "AST": {
+            "count": 79,
+            "mean": 4.43038
+          }
+        },
+        "win_loss_pts": {
+          "W": {
+            "count": 40,
+            "mean": 25.275
+          },
+          "L": {
+            "count": 39,
+            "mean": 23.974359
+          }
+        }
+      },
+      {
+        "season": "2023-2024",
+        "rows_after_header": 83,
+        "excluded_without_valid_date": 1,
+        "excluded_without_numeric_pts": 3,
+        "eligible_games": 79,
+        "eligible_games_without_known_result": 0,
+        "metrics": {
+          "PTS": {
+            "count": 79,
+            "mean": 25.936709
+          },
+          "TRB": {
+            "count": 79,
+            "mean": 5.443038
+          },
+          "AST": {
+            "count": 79,
+            "mean": 5.126582
+          }
+        },
+        "win_loss_pts": {
+          "W": {
+            "count": 54,
+            "mean": 26.296296
+          },
+          "L": {
+            "count": 25,
+            "mean": 25.16
+          }
+        }
+      },
+      {
+        "season": "2024-2025",
+        "rows_after_header": 83,
+        "excluded_without_valid_date": 1,
+        "excluded_without_numeric_pts": 3,
+        "eligible_games": 79,
+        "eligible_games_without_known_result": 0,
+        "metrics": {
+          "PTS": {
+            "count": 79,
+            "mean": 27.556962
+          },
+          "TRB": {
+            "count": 79,
+            "mean": 5.696203
+          },
+          "AST": {
+            "count": 79,
+            "mean": 4.544304
+          }
+        },
+        "win_loss_pts": {
+          "W": {
+            "count": 48,
+            "mean": 28.166667
+          },
+          "L": {
+            "count": 31,
+            "mean": 26.612903
+          }
+        }
+      }
+    ],
+    "all_seasons": {
+      "rows_after_header": 405,
+      "excluded_without_valid_date": 5,
+      "excluded_without_numeric_pts": 19,
+      "eligible_games": 381,
+      "eligible_games_without_known_result": 0,
+      "metrics": {
+        "PTS": {
+          "count": 381,
+          "mean": 23.87664
+        },
+        "TRB": {
+          "count": 381,
+          "mean": 5.293963
+        },
+        "AST": {
+          "count": 381,
+          "mean": 4.199475
+        }
+      },
+      "win_loss_pts": {
+        "W": {
+          "count": 204,
+          "mean": 24.833333
+        },
+        "L": {
+          "count": 177,
+          "mean": 22.774011
+        }
+      }
+    }
+  },
+  "selected_peer_pts_2024_25": [
+    {
+      "player": "Anthony Edwards",
+      "source_sheet": "2024-2025",
+      "count": 79,
+      "mean": 27.556962
+    },
+    {
+      "player": "Tyler Herro",
+      "source_sheet": "Tyler Herro 2024-2025",
+      "count": 77,
+      "mean": 23.896104
+    },
+    {
+      "player": "Jaylen Brown",
+      "source_sheet": "Jaylen Brown 2024-2025",
+      "count": 63,
+      "mean": 22.190476
+    },
+    {
+      "player": "Jalen Green",
+      "source_sheet": "Jalen Green 2024-2025",
+      "count": 82,
+      "mean": 21.012195
+    },
+    {
+      "player": "Donovan Mitchell",
+      "source_sheet": "Donovon Mitchell 2024-2025",
+      "count": 71,
+      "mean": 23.957746
+    },
+    {
+      "player": "Devin Booker",
+      "source_sheet": "Devin Booker 2024-2025",
+      "count": 75,
+      "mean": 25.64
+    }
+  ]
+}
