@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1050" viewBox="0 0 1080 1050" role="img" aria-labelledby="title description">
+<title id="title">Anthony Edwards — season and scoring review</title>
+<desc id="description">Independent Python SVG of already-public aggregate results, not a Power BI export. Season averages and win-loss means are separate descriptive comparisons.</desc>
+<rect width="1080" height="1050" fill="#f4f7fb"/><g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="49" font-size="14" fill="#087f8c" font-weight="700">BASKETBALL / AGGREGATE REVIEW</text>
+<text x="40" y="91" font-size="33" fill="#24364b" font-weight="700">Anthony Edwards: the season view</text>
+<text x="40" y="123" font-size="19" fill="#24364b" font-weight="400">381 eligible recorded games · 2020-21 through 2024-25</text>
+<text x="40" y="153" font-size="16" fill="#24364b" font-weight="400">November 2026 Python review, not a Power BI export. Original figures preserved below.</text>
+<text x="40" y="205" font-size="23" fill="#24364b" font-weight="700">Per-game production by NBA season</text>
+<text x="245" y="242" font-size="17" fill="#087f8c" font-weight="700">PTS</text>
+<rect x="245" y="264" width="105.237" height="21" rx="3" fill="#087f8c"/>
+<text x="405" y="282" font-size="16" fill="#24364b" font-weight="400">19.33</text>
+<text x="245" y="305" font-size="13" fill="#5d6c7e" font-weight="400">n=72</text>
+<rect x="245" y="321" width="115.896" height="21" rx="3" fill="#087f8c"/>
+<text x="405" y="339" font-size="16" fill="#24364b" font-weight="400">21.29</text>
+<text x="245" y="362" font-size="13" fill="#5d6c7e" font-weight="400">n=72</text>
+<rect x="245" y="378" width="134.084" height="21" rx="3" fill="#087f8c"/>
+<text x="405" y="396" font-size="16" fill="#24364b" font-weight="400">24.63</text>
+<text x="245" y="419" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<rect x="245" y="435" width="141.181" height="21" rx="3" fill="#087f8c"/>
+<text x="405" y="453" font-size="16" fill="#24364b" font-weight="400">25.94</text>
+<text x="245" y="476" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<rect x="245" y="492" width="150.000" height="21" rx="3" fill="#087f8c"/>
+<text x="405" y="510" font-size="16" fill="#24364b" font-weight="400">27.56</text>
+<text x="245" y="533" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<text x="515" y="242" font-size="17" fill="#4d68aa" font-weight="700">TRB</text>
+<rect x="515" y="264" width="120.742" height="21" rx="3" fill="#4d68aa"/>
+<text x="675" y="282" font-size="16" fill="#24364b" font-weight="400">4.67</text>
+<text x="515" y="305" font-size="13" fill="#5d6c7e" font-weight="400">n=72</text>
+<rect x="515" y="321" width="123.258" height="21" rx="3" fill="#4d68aa"/>
+<text x="675" y="339" font-size="16" fill="#24364b" font-weight="400">4.76</text>
+<text x="515" y="362" font-size="13" fill="#5d6c7e" font-weight="400">n=72</text>
+<rect x="515" y="378" width="150.000" height="21" rx="3" fill="#4d68aa"/>
+<text x="675" y="396" font-size="16" fill="#24364b" font-weight="400">5.80</text>
+<text x="515" y="419" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<rect x="515" y="435" width="140.830" height="21" rx="3" fill="#4d68aa"/>
+<text x="675" y="453" font-size="16" fill="#24364b" font-weight="400">5.44</text>
+<text x="515" y="476" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<rect x="515" y="492" width="147.380" height="21" rx="3" fill="#4d68aa"/>
+<text x="675" y="510" font-size="16" fill="#24364b" font-weight="400">5.70</text>
+<text x="515" y="533" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<text x="785" y="242" font-size="17" fill="#b76e26" font-weight="700">AST</text>
+<rect x="785" y="264" width="85.746" height="21" rx="3" fill="#b76e26"/>
+<text x="945" y="282" font-size="16" fill="#24364b" font-weight="400">2.93</text>
+<text x="785" y="305" font-size="13" fill="#5d6c7e" font-weight="400">n=72</text>
+<rect x="785" y="321" width="111.754" height="21" rx="3" fill="#b76e26"/>
+<text x="945" y="339" font-size="16" fill="#24364b" font-weight="400">3.82</text>
+<text x="785" y="362" font-size="13" fill="#5d6c7e" font-weight="400">n=72</text>
+<rect x="785" y="378" width="129.630" height="21" rx="3" fill="#b76e26"/>
+<text x="945" y="396" font-size="16" fill="#24364b" font-weight="400">4.43</text>
+<text x="785" y="419" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<rect x="785" y="435" width="150.000" height="21" rx="3" fill="#b76e26"/>
+<text x="945" y="453" font-size="16" fill="#24364b" font-weight="400">5.13</text>
+<text x="785" y="476" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<rect x="785" y="492" width="132.963" height="21" rx="3" fill="#b76e26"/>
+<text x="945" y="510" font-size="16" fill="#24364b" font-weight="400">4.54</text>
+<text x="785" y="533" font-size="13" fill="#5d6c7e" font-weight="400">n=79</text>
+<text x="40" y="282" font-size="18" fill="#24364b" font-weight="700">2020-21</text>
+<text x="40" y="339" font-size="18" fill="#24364b" font-weight="700">2021-22</text>
+<text x="40" y="396" font-size="18" fill="#24364b" font-weight="700">2022-23</text>
+<text x="40" y="453" font-size="18" fill="#24364b" font-weight="700">2023-24</text>
+<text x="40" y="510" font-size="18" fill="#24364b" font-weight="700">2024-25</text>
+<text x="40" y="624" font-size="22" fill="#24364b" font-weight="700">Scoring in wins and losses</text>
+<text x="560" y="624" font-size="22" fill="#24364b" font-weight="700">Selected peers / 2024-25</text>
+<text x="40" y="677" font-size="18" fill="#24364b" font-weight="700">Wins</text>
+<text x="40" y="702" font-size="14" fill="#24364b" font-weight="400">n=204</text>
+<rect x="150" y="657" width="230.000" height="29" rx="3" fill="#087f8c"/>
+<text x="150" y="712" font-size="16" fill="#24364b" font-weight="400">24.83 PTS / recorded game</text>
+<text x="40" y="779" font-size="18" fill="#24364b" font-weight="700">Losses</text>
+<text x="40" y="804" font-size="14" fill="#24364b" font-weight="400">n=177</text>
+<rect x="150" y="759" width="210.927" height="29" rx="3" fill="#087f8c"/>
+<text x="150" y="814" font-size="16" fill="#24364b" font-weight="400">22.77 PTS / recorded game</text>
+<text x="560" y="668" font-size="16" fill="#24364b" font-weight="400">Anthony Edwards</text>
+<rect x="755" y="654" width="150.000" height="20" rx="3" fill="#4d68aa"/>
+<text x="915" y="668" font-size="14" fill="#24364b" font-weight="400">27.56 · n=79</text>
+<text x="560" y="715" font-size="16" fill="#24364b" font-weight="400">Tyler Herro</text>
+<rect x="755" y="701" width="130.073" height="20" rx="3" fill="#4d68aa"/>
+<text x="915" y="715" font-size="14" fill="#24364b" font-weight="400">23.90 · n=77</text>
+<text x="560" y="762" font-size="16" fill="#24364b" font-weight="400">Jaylen Brown</text>
+<rect x="755" y="748" width="120.789" height="20" rx="3" fill="#4d68aa"/>
+<text x="915" y="762" font-size="14" fill="#24364b" font-weight="400">22.19 · n=63</text>
+<text x="560" y="809" font-size="16" fill="#24364b" font-weight="400">Jalen Green</text>
+<rect x="755" y="795" width="114.375" height="20" rx="3" fill="#4d68aa"/>
+<text x="915" y="809" font-size="14" fill="#24364b" font-weight="400">21.01 · n=82</text>
+<text x="560" y="856" font-size="16" fill="#24364b" font-weight="400">Donovan Mitchell</text>
+<rect x="755" y="842" width="130.408" height="20" rx="3" fill="#4d68aa"/>
+<text x="915" y="856" font-size="14" fill="#24364b" font-weight="400">23.96 · n=71</text>
+<text x="560" y="903" font-size="16" fill="#24364b" font-weight="400">Devin Booker</text>
+<rect x="755" y="889" width="139.565" height="20" rx="3" fill="#4d68aa"/>
+<text x="915" y="903" font-size="14" fill="#24364b" font-weight="400">25.64 · n=75</text>
+<text x="40" y="982" font-size="16" fill="#24364b" font-weight="400">Descriptive association; scoring is not established as the cause of a win.</text>
+<text x="40" y="1009" font-size="15" fill="#24364b" font-weight="400">Season groups are not calendar years. Selected peers are not a league-wide ranking.</text>
+<text x="40" y="1032" font-size="14" fill="#24364b" font-weight="400">Missing-PTS nonappearances and undated totals excluded; original source workbooks remain private.</text>
+</g></svg>

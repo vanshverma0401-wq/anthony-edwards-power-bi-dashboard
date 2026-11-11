@@ -79,6 +79,13 @@ not launch Power BI, execute bundled code or update the original files.
 
 ## Remaining proof to obtain
 
+The [November 10 source recheck](submission_recheck_2026-11-10.json) confirms the
+freshly reopened final archive and write-up fingerprints. The standalone PBIX
+and the three authorized original workbooks reproduced the published static
+inventory and aggregate checks. A new Python SVG presents those aggregate
+results with season labels and explicit group counts; all nine original Power BI
+figures remain intact. The new view does not establish the native checks below.
+
 1. Open the original in Power BI Desktop and verify refresh and slicer behavior.
 2. Inspect and export exact Power Query M, explicit DAX and model relationships.
 3. Check calendar/season semantics and compare average percentages with weighted rates.

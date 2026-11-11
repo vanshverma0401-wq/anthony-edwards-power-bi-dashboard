@@ -94,6 +94,22 @@ therefore not supplied.
 
 ## Complete source-figure gallery
 
+### November 2026 independent review graphic
+
+`scripts/render_review.py` renders the public `technical/data_validation.json`
+into a separately labeled SVG. The view shows PTS/TRB/AST means by source NBA
+season with each metric's game count, two independent win/loss scoring means and
+the selected-peer PTS comparison with counts. It does not plot a normalized donut
+or a forecast. It is new Python portfolio work, not recovered Power BI/DAX/M or a
+native report export. Invalid/nonfinite means, missing metrics, zero denominators
+and source/output collisions are rejected.
+
+The authentic final attachments were reopened on November 10 and their hashes
+matched the source inventory. Static PBIX inspection and the private-workbook
+aggregate replay matched the public JSON. No Power BI Desktop or Windows runtime
+is available in this check, so native refresh, interactions, compressed model
+relationships and exact M/DAX remain unverified.
+
 The README now displays all nine analytical figures from the final write-up in
 report order. Their image bytes are preserved exactly. The joint project logo is
 omitted. The [figure manifest](technical/figure_manifest.json) maps the original

@@ -10,6 +10,18 @@ and shooting metrics.
 
 **[Browse all nine figures](#complete-figure-gallery) · [See the report structure](technical/TECHNICAL_EVIDENCE.md) · [Review checked aggregates](technical/data_validation.json)**
 
+## Readable season and scoring review
+
+![Independent season and scoring review from checked aggregate results](assets/review/season-scoring-overview.svg)
+
+This **November 2026 Python review export** uses the already-public checked
+aggregates. It keeps NBA seasons distinct from calendar years and shows win/loss
+group means with game counts, rather than normalizing two averages into donut
+percentages. It is **not a new Power BI export**. The original nine figures remain
+unchanged below.
+
+## Original Power BI visual
+
 ![Original Power BI chart of Anthony Edwards points, rebounds and assists](assets/performance-trends.png)
 
 *Original saved report visual. The displayed Year axis uses calendar dates,
@@ -177,7 +189,18 @@ python3 -m pip install -r requirements.txt
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 python3 scripts/inspect_pbix.py /path/to/authorized/Project.pbix --output report_inventory.json
 python3 scripts/validate_workbooks.py /path/to/authorized/source_folder --output data_validation.json
+python3 scripts/render_review.py technical/data_validation.json --output assets/review/season-scoring-overview.svg
 ```
+
+The public tests, original-workbook aggregate checks and deterministic review
+image generation were rerun with **Python 3.12.14 / openpyxl 3.1.5** on November
+10, 2026. The [CI workflow](.github/workflows/checks.yml) uses only public aggregate
+JSON and synthetic fixtures; private original workbooks are not required or uploaded.
+
+The actual final archive and separately submitted write-up were reopened on
+November 10; their fingerprints match the original source inventory. The
+[source recheck](technical/submission_recheck_2026-11-10.json) separates this
+confirmation from the still-outstanding native Power BI runtime checks.
 
 No Power BI engine is launched, no source data is refreshed and no embedded code
 is executed. The public tests use small synthetic fixtures. Original source files

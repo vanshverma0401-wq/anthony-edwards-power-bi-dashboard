@@ -1,0 +1,18 @@
+{
+  "checked_date_local": "2026-11-10",
+  "timezone": "America/Chicago",
+  "source_context": "Original final archive and standalone write-up reopened and compared with retained source evidence",
+  "original_archive_sha256": "df443d015ba72dff9e67f51a334ab409892170b458988e99c3a25893af3a12e1",
+  "original_writeup_sha256": "2ef061d510566ad816df8b9ef13f5e9ebb2f4ad44696a4d09e836b87486f8e13",
+  "original_pbix_sha256": "4c7367d71beb5a531e270aa5eac55730105b13c5cea9b3b18d27bedebfb90fba",
+  "original_source_fingerprints_match": true,
+  "public_pbix_static_inventory_reproduced": true,
+  "public_workbook_aggregate_validation_reproduced": true,
+  "new_visual": "assets/review/season-scoring-overview.svg",
+  "new_visual_scope": "Independent Python review of existing public aggregate results; not a native Power BI export",
+  "tested_environment": {"python": "3.12.14", "openpyxl": "3.1.5"},
+  "power_bi_runtime_executed": false,
+  "compressed_model_decoded": false,
+  "original_figures_changed": false,
+  "private_sources_or_game_rows_published": false
+}
